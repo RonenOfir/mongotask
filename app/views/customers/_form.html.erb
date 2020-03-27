@@ -45,7 +45,16 @@
     <%= form.label :age %>
     <%= form.number_field :age %>
   </div>
+
+  <div class="field">
+    <%= form.label :gender %>
+
+    <%= select_tag(:gender_cd, raw('<option value="1">male</option><option value="0">female</option>')) %>
+  
+
+  </div>
  
+  <br>
   <div class="actions">
     <%= form.submit %>
   </div>

@@ -18,6 +18,11 @@ gem 'jbuilder', '~> 2.7'
 
 #ronen
 gem 'mongoid', '~> 7.0.6'
+gem 'simple_enum', '~> 2.3.0' , require: 'simple_enum/mongoid'
+# gem "mongoid_enumerable"
+# gem 'simple_enum'
+
+
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use Active Model has_secure_password

@@ -1,5 +1,7 @@
 class Customer
   include Mongoid::Document
+  include SimpleEnum::Mongoid
+
   field :first_name, type: String
   field :last_name, type: String
   field :mail, type: String
@@ -8,11 +10,12 @@ class Customer
   field :address, type: String
   field :age, type: Integer
 
-  # index({mail:1}, {unique:true, name:"mail_index"})
-  # index({phone:1}, {unique:true, name:"phone_index"})
+  
+  as_enum :gender, female: 1, male: 0
 
+  field :gender_cd, type: Integer
+ 
   validates_uniqueness_of :mail, :phone
-
   validates_presence_of :first_name, :last_name, :mail, :phone
 
 
