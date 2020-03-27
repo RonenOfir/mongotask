@@ -19,8 +19,8 @@ gem 'jbuilder', '~> 2.7'
 #ronen
 gem 'mongoid', '~> 7.0.6'
 gem 'simple_enum', '~> 2.3.0' , require: 'simple_enum/mongoid'
-# gem "mongoid_enumerable"
-# gem 'simple_enum'
+# gem 'mongoid-enum', git: 'git@github.com:boie0025/mongoid-enum', branch: 'nb/mongoid-6'
+
 
 
 # Use Redis adapter to run Action Cable in production
