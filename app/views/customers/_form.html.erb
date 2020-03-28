@@ -45,6 +45,17 @@
     <%= form.label :age %>
     <%= form.number_field :age %>
   </div>
+
+  <div class="field">
+    <%= form.label :status %>
+   
+<select name="post[status]" id="status">
+  <option value="male">male</option>
+  <option value="female">female</option>
+  
+</select>
+
+  </div>
  
   <div class="actions">
     <%= form.submit %>
